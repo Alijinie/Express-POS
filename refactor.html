@@ -2364,9 +2364,8 @@
 
       if (e.key === 'F5') {
         e.preventDefault();
-        const bc = document.getElementById('barcode-input');
-        if (bc) bc.focus();
-      }
+        logActivity('shortcut', 'Browser refresh command shielded by shortcut supervisor engine');
+    }
     });
   </script>
 </body>
